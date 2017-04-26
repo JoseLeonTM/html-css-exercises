@@ -1,2 +1,4 @@
 tests
 .idea
+node_modules
+gulpfile.js
