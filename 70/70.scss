@@ -1,0 +1,49 @@
+body{
+    background-color:gray;
+    .container{
+        border: 5px double black;
+        width: 800px;
+        height:600px;
+        margin: 10px auto;
+        background-color: white;
+        .animate{
+            width:60px;
+            height:60px;
+            position:relative;
+            border-radius: 30px;
+            animation: twist 1s infinite;
+        }
+    }
+}
+@keyframes twist{
+    0%{
+        background-color: #af723c;
+        left:385px;
+        top:10px;
+    }
+    20%{
+        background-color: #4b4a9a;
+        left:600px;
+        top:490px;
+    }
+    40%{
+        background-color: #35a660;
+        left:120px;
+        top:200px;
+    }
+    60%{
+        background-color: #bd3cee;
+        left:600px;
+        top:200px;
+    }
+    80%{
+        background-color: #018e00;
+        left:120px;
+        top:490px;
+    }
+    100%{
+        background-color: #c01800;
+        left:385px;
+        top:10px;
+    }
+}
