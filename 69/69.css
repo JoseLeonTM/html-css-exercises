@@ -1,8 +1,4 @@
 body {
-  background-image: url("bg.jpg");
-  background-repeat: no-repeat;
-  background-position: 30% 70%;
-  background-size: 100%;
   color: #FFF;
   font-family: "pp-sans-big-light", Helvetica, Neue, Arial, sans-serif;
   font-size: 14px;
@@ -13,7 +9,13 @@ body {
 header {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
   border-bottom: 1px solid #999;
-  width: 100%; }
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2; }
+
+header.sub {
+  background-image: radial-gradient(circle at bottom center, #0086d4 30%, #00408f); }
 
 /*///////////////LOGO////////////////*/
 #logo {
@@ -41,19 +43,24 @@ nav {
     padding-top: 5px;
     margin-left: 0.5%;
     border-bottom: 2px solid transparent; }
+    nav a span {
+      content: "";
+      border-right: 1px solid #999;
+      border-bottom: 1px solid #999;
+      height: 8px;
+      width: 8px;
+      display: inline-block;
+      position: relative;
+      top: -4px;
+      left: 5px;
+      transform: rotate(45deg);
+      transition: transform .2s; }
+    nav a .up {
+      transform: rotate(-135deg); }
   nav a:hover {
     border-bottom: 2px solid white; }
   nav .selected {
     border-bottom: 2px solid white; }
-
-.arrow {
-  color: #999;
-  font-size: 18px;
-  font-weight: 100;
-  line-height: 14px;
-  display: inline-block;
-  margin: 0 3px;
-  transform: rotate(-90deg); }
 
 li {
   list-style: none;
@@ -89,20 +96,93 @@ button:focus {
   color: black;
   background-color: white; }
 
+/*///////////////////SUBMENU///////////////////*/
+#submenu {
+  position: relative;
+  top: 65px;
+  width: 100%;
+  height: 150px;
+  transition: height 0.3s;
+  overflow: hidden;
+  background-image: radial-gradient(circle at bottom center, #008de2 30%, #00408f); }
+  #submenu div {
+    width: 80%;
+    z-index: 1;
+    margin: 0 7%; }
+    #submenu div a {
+      width: 23%;
+      display: inline-block;
+      margin: 17px 0 17px 10%;
+      text-decoration: none;
+      color: white;
+      font-weight: 400; }
+      #submenu div a span {
+        font-size: 11px;
+        font-weight: 100;
+        margin-top: 5px;
+        display: block; }
+    #submenu div a:hover {
+      text-decoration: underline; }
+
+#submenu .hide {
+  display: none; }
+
+#x {
+  position: absolute;
+  top: 40px;
+  right: 8%;
+  content: ""; }
+
+#x:before {
+  display: inline-block;
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  transform: rotate(45deg); }
+
+#x:after {
+  display: inline-block;
+  content: "";
+  border-left: 1px solid #999;
+  border-bottom: 1px solid #999;
+  position: relative;
+  left: 5px;
+  width: 13px;
+  height: 13px;
+  transform: rotate(45deg); }
+
+#x:hover {
+  cursor: pointer; }
+
+#submenu.shrink {
+  padding-top: 0;
+  height: 0; }
+
 /*/////////////////////////BODY/////////////////////*/
+#body {
+  height: 100%;
+  z-index: 3;
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 30% -70px; }
+
 .content {
   width: 50%;
-  margin: 120px auto;
+  padding: 150px 0;
+  margin: 0 auto;
   text-align: center;
   font-weight: lighter;
   font-size: 56px; }
   .content button {
     color: white;
-    border-radius: 22px;
-    height: 44px;
+    border-radius: 25px;
+    height: 50px;
     display: block;
     width: 50%;
-    margin: 10px auto; }
+    margin: 0 auto 10px; }
   .content button:first-of-type {
     background-color: #0070ba;
     border: none; }
@@ -113,9 +193,9 @@ button:focus {
     border: 1px solid #ffffff; }
 
 @media (max-width: 1215px) {
-  body {
+  #body {
     background-size: 1215px;
-    background-position: 30% 20%; }
+    background-position: 30% -70px; }
   #logo {
     margin: 20px 12% 0 4%; }
   nav {
@@ -127,9 +207,11 @@ button:focus {
     width: 607px; } }
 
 @media (max-width: 1045px) {
-  body {
-    background-position: -65px 20%; }
+  #body {
+    background-position: -65px -70px; }
   header {
+    width: 1045px; }
+  #submenu {
     width: 1045px; }
   #logo {
     margin: 20px 115px 0 41px; }
@@ -137,4 +219,6 @@ button:focus {
     margin-top: 15px;
     margin-right: 41px; }
   nav {
-    width: 523px; } }
+    width: 523px; }
+  .content {
+    margin: 0 210px; } }

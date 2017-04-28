@@ -3,7 +3,6 @@
 <head>
     <title>PayPal Menu</title>
     <link rel="stylesheet" type="text/css" href="69.css"/>
-    <script type="text/javascript" src="69.js"></script>
 </head>
 <body>
     <header>
@@ -11,8 +10,8 @@
             <a href="#"><img src="logo.png"/></a>
         </div>
         <nav>
-            <a href="#" onclick="toggle()">Personal<span class="arrow"><</span></a>
-            <a href="#" onclick="toggle()">Business<span class="arrow"><</span></a>
+            <a href="#" id="personalButton" onclick="events.toggle()">Personal<span></span></a>
+            <a href="#" id="businessButton" onclick="events.toggle()">Business<span></span></a>
             <a href="#">Send</a>
             <a href="#">Request</a>
         </nav>
@@ -21,10 +20,57 @@
             <button class="signup">Sign Up</button>
         </div>
     </header>
-<div class="content">
-    <p>Join the millions of people using PayPal.</p>
-    <button>Sign Up for Free</button>
-    <button>Explore BusinessSolutions</button>
-</div>
+    <!--<div id="submenuBG" class="shrink"></div>-->
+    <div id="submenu" class="shrink">
+        <div id="personalMenu" class="hide">
+            <a href="#">Getting Started
+                <span>How to use PayPal</span>
+            </a>
+            <a href="#">PayPal Credit
+                <span>Get more time to pay</span>
+            </a>
+            <a href="#">eBay Payments
+                <span>Speed through checkout on eBay</span>
+            </a>
+            <a href="#">Check Out Securely Online
+                <span>Use your credit cards or other funds</span>
+            </a>
+            <a href="#">Mobile Wallet
+                <span>Pay in stores with our app</span>
+            </a>
+            <a href="#">Shopping and More
+                <span>Deals, gift cards and donations</span>
+            </a>
+        </div>
+        <div id="businessMenu" class="hide">
+            <a href="#">All Business Solutions
+                <span>Merchant services, invoicing, and more</span>
+            </a>
+            <a href="#">Get Paid on Your Website
+                <span>Accept credit & debit cards and PayPal</span>
+            </a>
+            <a href="#">Add PayPal to Your Checkout
+                <span>Access customers who prefer PayPal</span>
+            </a>
+            <a href="#">Get Paid in Person
+                <span>Mobile card readers and POS Solutions</span>
+            </a>
+            <a href="#">Borrow for Your Business
+                <span>Affordable business loans</span>
+            </a>
+            <a href="#">Offer Credit to Your Customers
+                <span>Promote financing to help increase sales</span>
+            </a>
+        </div>
+        <section id="x" class="hide"></section>
+    </div>
+    <div id="body">
+        <div class="content">
+            <p>Join the millions of people using PayPal.</p>
+            <button>Sign Up for Free</button>
+            <button>Explore BusinessSolutions</button>
+        </div>
+    </div>
 </body>
+<script type="text/javascript" src="69.js"></script>
 </html>
