@@ -1,0 +1,39 @@
+body {
+  background-color: gray; }
+
+.container {
+  background-image: linear-gradient(to left, #353535, #151515);
+  margin: 20px 30px;
+  padding: 20px;
+  border-radius: 30px; }
+  .container .stars {
+    list-style: none;
+    width: 500px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    text-decoration: none; }
+    .container .stars a {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      height: 100px;
+      float: right;
+      background-image: url("stars.png");
+      background-position-x: -494px;
+      background-repeat: no-repeat; }
+      .container .stars a.five {
+        width: 100px; }
+      .container .stars a.four {
+        width: 200px; }
+      .container .stars a.three {
+        width: 300px; }
+      .container .stars a.two {
+        width: 400px; }
+      .container .stars a.one {
+        width: 500px; }
+      .container .stars a:hover {
+        background-position-x: -395px; }
+      .container .stars a:target {
+        background-position-x: -394px; }

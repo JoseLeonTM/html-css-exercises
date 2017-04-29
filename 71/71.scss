@@ -1,0 +1,58 @@
+
+body{
+  background-color:gray;
+}
+.container{
+  background-image:linear-gradient(to left, #353535, #151515);
+  margin:20px 30px;
+  padding:20px;
+  border-radius:30px;
+  .stars {
+    list-style: none;
+    width:500px;
+    height:100px;
+    padding:0;
+    margin:0;
+    font-size: 0;
+    text-decoration: none;
+    //background-image: url('stars.png');
+    //background-repeat:no-repeat;
+    //background-position-x:-495px;
+    a{
+      display:inline-block;
+      margin:0;
+      padding:0;
+      //width:500px;
+      height:100px;
+      float:right;
+      background-image: url('stars.png');
+      background-position-x:-494px;
+      background-repeat:no-repeat;
+      &.five{
+        width:100px;
+      }
+      &.four{
+        width:200px;
+        //background-position-x:-495px;
+      }
+      &.three{
+        width:300px;
+        //background-position-x:-495px;
+      }
+      &.two{
+        width:400px;
+        //background-position-x:-495px;
+      }
+      &.one{
+        width:500px;
+        //background-position-x:-495px;
+      }
+      &:hover{
+        background-position-x:-395px;
+      }
+      &:target{
+        background-position-x:-394px;
+      }
+    }
+  }
+}
