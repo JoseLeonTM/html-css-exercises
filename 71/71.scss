@@ -9,49 +9,67 @@ body{
   border-radius:30px;
   .stars {
     list-style: none;
+    display: inline-block;
     width:500px;
     height:100px;
     padding:0;
     margin:0;
     font-size: 0;
     text-decoration: none;
-    //background-image: url('stars.png');
-    //background-repeat:no-repeat;
-    //background-position-x:-495px;
     a{
       display:inline-block;
       margin:0;
       padding:0;
-      //width:500px;
+      position:absolute;
       height:100px;
       float:right;
       background-image: url('stars.png');
       background-position-x:-494px;
       background-repeat:no-repeat;
-      &.five{
+      &.one{
         width:100px;
+        &:hover{
+          background-position:-394px;
+        }
+        &:target{
+          background-position:-394px;
+        }
       }
-      &.four{
+      &.two{
         width:200px;
-        //background-position-x:-495px;
+        &:hover{
+          background-position:-296px;
+        }
+        &:target{
+          background-position:-296px;
+        }
       }
       &.three{
         width:300px;
-        //background-position-x:-495px;
+        &:hover{
+          background-position:-198px;
+        }
+        &:target{
+          background-position:-198px;
+        }
       }
-      &.two{
+      &.four{
         width:400px;
-        //background-position-x:-495px;
+        &:hover{
+          background-position:-99px;
+        }
+        &:target{
+          background-position:-99px;
+        }
       }
-      &.one{
-        width:500px;
-        //background-position-x:-495px;
-      }
-      &:hover{
-        background-position-x:-395px;
-      }
-      &:target{
-        background-position-x:-394px;
+      &.five{
+        width:495px;
+        &:hover{
+          background-position:0;
+        }
+        &:target{
+          background-position-x:0;
+        }
       }
     }
   }

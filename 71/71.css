@@ -8,6 +8,7 @@ body {
   border-radius: 30px; }
   .container .stars {
     list-style: none;
+    display: inline-block;
     width: 500px;
     height: 100px;
     padding: 0;
@@ -18,22 +19,39 @@ body {
       display: inline-block;
       margin: 0;
       padding: 0;
+      position: absolute;
       height: 100px;
       float: right;
       background-image: url("stars.png");
       background-position-x: -494px;
       background-repeat: no-repeat; }
-      .container .stars a.five {
+      .container .stars a.one {
         width: 100px; }
-      .container .stars a.four {
+        .container .stars a.one:hover {
+          background-position: -394px; }
+        .container .stars a.one:target {
+          background-position: -394px; }
+      .container .stars a.two {
         width: 200px; }
+        .container .stars a.two:hover {
+          background-position: -296px; }
+        .container .stars a.two:target {
+          background-position: -296px; }
       .container .stars a.three {
         width: 300px; }
-      .container .stars a.two {
+        .container .stars a.three:hover {
+          background-position: -198px; }
+        .container .stars a.three:target {
+          background-position: -198px; }
+      .container .stars a.four {
         width: 400px; }
-      .container .stars a.one {
-        width: 500px; }
-      .container .stars a:hover {
-        background-position-x: -395px; }
-      .container .stars a:target {
-        background-position-x: -394px; }
+        .container .stars a.four:hover {
+          background-position: -99px; }
+        .container .stars a.four:target {
+          background-position: -99px; }
+      .container .stars a.five {
+        width: 495px; }
+        .container .stars a.five:hover {
+          background-position: 0; }
+        .container .stars a.five:target {
+          background-position-x: 0; }
