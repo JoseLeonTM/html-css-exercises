@@ -1,0 +1,11 @@
+body div {
+  width: 50%;
+  margin: auto;
+  background-color: gray;
+  height: 200px;
+  color: white;
+  text-transform: uppercase;
+  display: flex; }
+  body div p {
+    line-height: normal;
+    margin: auto; }
