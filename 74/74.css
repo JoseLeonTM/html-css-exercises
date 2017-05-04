@@ -1,0 +1,9 @@
+body {
+  text-transform: uppercase;
+  text-align: center;
+  display: table-cell;
+  background: gray;
+  height: 400px;
+  width: 1000px;
+  vertical-align: middle;
+  border: 1px solid black; }
