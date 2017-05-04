@@ -1,0 +1,37 @@
+body{
+  padding:0;
+  margin:0;
+}
+header, footer{
+  color: white;
+  font-size:20px;
+  background-color: black;
+  //border: 5px solid red;
+  padding:20px;
+  ul{
+    list-style: none;
+    li{
+      cursor: pointer;
+      display:inline-block;
+      padding: 0 50px;
+      &:not(:last-child){
+        border-right: 1px solid white;
+      }
+    }
+  }
+}
+section {
+  font-size: 16px;
+  padding: 30px;
+  background-color: gray;
+  column-gap:40px;
+  column-count: 3;
+  column-rule: 1px solid white;
+  text-align: justify;
+}
+
+footer{
+  position:relative;
+  bottom:0;
+  //width:inherit;
+}
