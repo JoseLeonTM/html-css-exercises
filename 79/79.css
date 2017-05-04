@@ -1,0 +1,53 @@
+div {
+  text-transform: uppercase;
+  height: 400px; }
+
+#carousel {
+  margin: 40px auto;
+  width: 500px;
+  height: 200px;
+  overflow: hidden; }
+
+ul {
+  list-style: none;
+  position: relative;
+  width: 400%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  animation: carousel 10s infinite; }
+  ul li {
+    position: relative;
+    background-color: red;
+    display: inline-block;
+    height: 300px;
+    float: left;
+    width: 25%; }
+    ul li:first-of-type {
+      background-color: blue; }
+    ul li:last-of-type {
+      background-color: green; }
+  ul img {
+    display: block;
+    width: 100%;
+    max-width: 100%; }
+
+@keyframes carousel {
+  0% {
+    left: 0; }
+  20% {
+    left: 0; }
+  25% {
+    left: -100%; }
+  45% {
+    left: -100%; }
+  50% {
+    left: -200%; }
+  70% {
+    left: -200%; }
+  75% {
+    left: -100%; }
+  95% {
+    left: -100%; }
+  100% {
+    left: 0; } }
