@@ -31,25 +31,24 @@ body{
     //right:0;
   }
 }
-
-@keyframes left{
-  from{
-    left:0;
-    right:100%;
-  }
-  to{
-    left:100%;
-    right:0;
-  }
-}
-
-@keyframes right{
-  from{
-    right:0;
-    left:100%;
-  }
-  to{
-    right:100%;
-    left:0;
-  }
-}
+//@keyframes left{
+//  from{
+//    left:0;
+//    right:100%;
+//  }
+//  to{
+//    left:100%;
+//    right:0;
+//  }
+//}
+//
+//@keyframes right{
+//  from{
+//    right:0;
+//    left:100%;
+//  }
+//  to{
+//    right:100%;
+//    left:0;
+//  }
+//}
