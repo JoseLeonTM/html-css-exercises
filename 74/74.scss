@@ -4,10 +4,12 @@ body{
     margin:auto;
     background-color: gray;
     height:200px;
+    color:white;
+    text-transform: uppercase;
+    display:flex;
     p{
-      color:white;
-      font-size: 20px;
-      text-align: center;
+      line-height:normal;
+      margin:auto;
     }
   }
 }
