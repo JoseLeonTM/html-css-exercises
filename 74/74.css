@@ -1,0 +1,9 @@
+body div {
+  width: 50%;
+  margin: auto;
+  background-color: gray;
+  height: 200px; }
+  body div p {
+    color: white;
+    font-size: 20px;
+    text-align: center; }
